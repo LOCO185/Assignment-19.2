@@ -1,0 +1,23 @@
+.box {
+    position: relative;
+    background-color: darkred;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    align-items: center;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    background-color: coral;
+    height: 200px;
+    width: 200px;
+    right: 100%;
+    transition-property: all;
+    transition-duration: 3s;
+}
+.box:hover::after {
+    background: darkblue;
+    transform:translateX(200px);
+    transform:translateX(1);
+}
